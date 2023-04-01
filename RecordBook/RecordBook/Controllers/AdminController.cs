@@ -57,12 +57,9 @@ namespace RecordBook.Controllers
             uye.Name = p.Name;
             uye.Surname = p.Surname;
             uye.Email = p.Email;
-
             uye.Password = p.Password;
             uye.Address = p.Address;
             uye.Phone = p.Phone;
-
-
             db.SaveChanges();
             return RedirectToAction("Index");
         }

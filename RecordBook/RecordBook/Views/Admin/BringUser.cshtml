@@ -49,7 +49,8 @@
                        class="table table-striped table-bordered dt-responsive nowrap table-hover"
                        style="width: 100%;">
                 </table>
-                @using (Html.BeginForm("BringUser", "Admin", FormMethod.Post))
+                @*burası bringuser di*@
+                @using (Html.BeginForm("UpdateUser", "Admin", FormMethod.Post))
                 {
                     <div style="margin-bottom:15px"></div>
                     <div class="form-group">
@@ -57,10 +58,10 @@
                         @Html.TextBoxFor(k => k.Id, new { @class = "form-control" })
                         <br />
 
-                        <label>Üye Adı</label>
+                        <label>Adı</label>
                         @Html.TextBoxFor(k => k.Name, new { @class = "form-control" })
                         <br />
-                        <label>Üye Soyadı</label>
+                        <label>Soyadı</label>
                         @Html.TextBoxFor(k => k.Surname, new { @class = "form-control" })
                         <br />
                         <label>Mail Adresi</label>
