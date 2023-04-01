@@ -29,6 +29,7 @@ namespace RecordBook.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpGet]
         public ActionResult NewUser()
         {
             return View();
@@ -36,6 +37,11 @@ namespace RecordBook.Controllers
         [HttpPost]
         public ActionResult NewUser(User t)
         {
+            if (!ModelState.IsValid)//eğer ki modelstate nin yani model üzerinde yapılmış olan geçerleme işlemi ünlemse yani false ise tekrar yazar ekle sayfasına geri döndürsün.
+            {
+                return View("NewUser");
+            }
+           
             db.User.Add(t);
             db.SaveChanges();
             return RedirectToAction("Index");

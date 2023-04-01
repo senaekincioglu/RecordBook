@@ -25,7 +25,7 @@ namespace RecordBook.Controllers
             }
             db.User.Add(user);
             db.SaveChanges();
-            return View();
+            return RedirectToAction("Login", "User");
 
         }
     }

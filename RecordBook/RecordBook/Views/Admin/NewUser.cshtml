@@ -23,7 +23,7 @@
 
             <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
             <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Admin/Index/">Home</a>
 
             </div>
         </div>
@@ -55,51 +55,51 @@
 
                     </div>
                     <div>
-                        <label>Kullanıcı Adı</label>
-                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.Name, "", new { @style = "color:red" })
+                        <label>Adı</label>
+                        @Html.TextBoxFor(y => y.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(y => y.Name)
 
-                        @*<input type="text" class="form-control" name="Employees" required />*@
+
 
                     </div>
                     <div>
-                        <label>Kullanıcı Soyadı</label>
-                        @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.Surname, "", new { @style = "color:red" })
+                        <label>Soyadı</label>
+                        @Html.TextBoxFor(y => y.Surname, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(y => y.Surname)
 
-                        @*<input type="text" class="form-control" name="Employees" required />*@
+
 
                     </div>
                     <div>
                         <label>Mail Adresi</label>
-                        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.Email, "", new { @style = "color:red" })
+                        @Html.TextBoxFor(y => y.Email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(y => y.Email)
 
-                        @*<input type="text" class="form-control" name="Employees" required />*@
+
 
                     </div>
 
                     <div>
                         <label>Şifre</label>
-                        @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.Password, "", new { @style = "color:red" })
+                        @Html.TextBoxFor(y => y.Password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(y => y.Password)
 
-                        @*<input type="text" class="form-control" name="Employees" required />*@
+
 
                     </div>
                     <div>
                         <label>Adres</label>
-                        @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.Address, "", new { @style = "color:red" })
+                        @Html.TextBoxFor(y => y.Address, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(y => y.Address)
 
-                        @*<input type="text" class="form-control" name="Employees" required />*@
+
 
                     </div>
 
                     <div>
                         <label>Telefon</label>
-                        @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.Phone, "", new { @style = "color:red" })
+                        @Html.TextBoxFor(y => y.Phone, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(y => y.Phone)
 
 
                     </div>
