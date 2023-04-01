@@ -192,6 +192,7 @@
     <Content Include="Login_v3\fonts\iconic\css\material-design-iconic-font.min.css" />
     <Content Include="Login_v3\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
     <Content Include="Login_v3\images\bg-01.jpg" />
+    <Content Include="Login_v3\images\Crystal_Clear_app_Login_Manager.svg.png" />
     <Content Include="Login_v3\images\icons\favicon.ico" />
     <Content Include="Login_v3\index.html" />
     <Content Include="Login_v3\js\main.js" />

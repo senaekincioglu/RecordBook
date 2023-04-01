@@ -40,9 +40,14 @@
             <div class="wrap-login100">
                 @using (Html.BeginForm("Login", "User", FormMethod.Post))
                 {
-                    <span class="login100-form-logo">
-                        <i class="zmdi zmdi-landscape"></i>
-                    </span>
+                    @*<span class="login100-form-logo">
+                <i class="zmdi zmdi-landscape"></i>
+            </span>*@
+                    <div style="text-align:center" class="image" >
+
+                        <img src="~/Login_v3/images/Crystal_Clear_app_Login_Manager.svg.png"  alt="User Image" width="120" height="120" >
+
+                    </div>
 
                     <span class="login100-form-title p-b-34 p-t-27">
                         Giriş Yap
